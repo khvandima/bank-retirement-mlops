@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+include *.pkl
+
+recursive-include ./classification_model/*
+
+include bank_classification_model/datasets/train.csv
+include bank_classification_model/datasets/test.csv
+include bank_classification_model/trained_models/*.pkl
+include bank_classification_model/VERSION
+include bank_classification_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

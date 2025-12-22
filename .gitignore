@@ -1,0 +1,81 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Tox
+# =========================
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# =========================
+# Build artifacts
+# =========================
+build/
+dist/
+
+# =========================
+# Model artifacts (optional)
+# Uncomment if you do NOT want trained models in repo
+# =========================
+# trained_models/
+# *.pkl
+# *.joblib
+# *.h5
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+*.env
+.venv/
+venv/
+
+# =========================
+# IDE / OS
+# =========================
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# =========================
+# CI / misc
+# =========================
+.cache/
+pytest_cache/
+.mypy_cache/
+
+# =========================
+# Docker
+# =========================
+*.tar
+

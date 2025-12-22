@@ -1,0 +1,24 @@
+package_name: bank_classification_model
+
+raw_data_file: Bank_Customer_retirement_TP.csv
+
+training_data_file: train.csv
+test_data_file: test.csv
+target: Retire
+
+pipeline_name: bank_retirement_model
+pipeline_save_file: bank_retirement_model_output_v
+
+features:
+  - Age
+  - Savings
+
+test_size: 0.25
+
+random_state: 0
+
+unused_fields:
+  - Customer ID
+
+variables_to_rename:
+  401K Savings: Savings

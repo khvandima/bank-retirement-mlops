@@ -1,0 +1,10 @@
+jupyter-notebooks*
+*/env*
+*/venv*
+.circleci*
+packages/bank_classification_model
+*.env
+*.log
+.git
+.gitignore
+.tox
