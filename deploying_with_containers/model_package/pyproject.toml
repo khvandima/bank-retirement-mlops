@@ -40,7 +40,16 @@ filterwarnings = [
 
 [project]
 name = "bank-classification-model"
-dynamic = ["version"]
+dynamic = [
+    "version",
+    "description",
+    "readme",
+    "requires-python",
+    "license",
+    "authors",
+    "classifiers",
+    "dependencies",
+]
 
 [tool.setuptools]
 include-package-data = true
