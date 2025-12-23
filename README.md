@@ -29,7 +29,11 @@ not on exploratory experimentation or model benchmarking.
 
 ## 🧠 End-to-End Architecture
 ```
-GitHub (commits / tags) ↓ CircleCI (orchestration: test → publish → deploy) ├── Model release track (tags) → Gemfury (versioned wheel) └── API deployment track (main/demo) → Docker build → Railway deploy
+GitHub (commits / tags)
+↓
+CircleCI (orchestration: test → publish → deploy)
+├── Model release track (tags) → Gemfury (versioned wheel)
+└── API deployment track (main/demo) → Docker build → Railway deploy
 ```
 
 
