@@ -28,8 +28,9 @@ not on exploratory experimentation or model benchmarking.
 ---
 
 ## 🧠 End-to-End Architecture
+```
 GitHub (commits / tags) ↓ CircleCI (orchestration: test → publish → deploy) ├── Model release track (tags) → Gemfury (versioned wheel) └── API deployment track (main/demo) → Docker build → Railway deploy
-
+```
 
 
 Both Gemfury publishing and Railway deployment are performed **inside CircleCI**.
@@ -117,7 +118,7 @@ Deployment flow (executed by CircleCI):
 ---
 
 ## 📁 Repository Structure
-
+```
 ├── .circleci/ # CircleCI pipeline configuration
 ├── deploying_with_containers/
 │ ├── bank_retirement_api/ # FastAPI inference service
@@ -125,7 +126,7 @@ Deployment flow (executed by CircleCI):
 │ └── Dockerfile # Container build configuration
 ├── .gitignore
 └── README.md
-
+```
 
 ---
 
