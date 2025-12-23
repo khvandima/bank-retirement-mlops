@@ -92,7 +92,7 @@ This repository uses **CircleCI** as the execution engine for automation.
 - build versioned Python wheels
 - publish ML packages to **Gemfury** (within CI)
 - build Docker images for the API (within CI)
-- deploy containers to **Railway** (within CI)
+- deploy containers to **Railway** via branch-triggered pipelines
 
 ### Pipeline triggers (two tracks)
 
