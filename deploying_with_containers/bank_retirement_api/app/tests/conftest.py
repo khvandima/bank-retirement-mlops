@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 import pytest
 from fastapi.testclient import TestClient
 from bank_classification_model.config.core import config
-from bank_classification_model.preprocessing.data_manager import load_dataset
+from bank_classification_model.processing.data_manager import load_dataset
 from app.main import app
 
 

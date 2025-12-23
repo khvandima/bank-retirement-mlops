@@ -35,7 +35,7 @@ async def predict(input_data: schemas.MultipleBankRetirementDataInputs) -> Any:
     if results['errors'] is not None:
         logger.warning(f'Prediction validation error: {results.get("errors")}')
 
-        raise HTTPException(status_code=200, detail=json.results['errors'])
+        raise HTTPException(status_code=200, detail=json.loads(results['errors']))
 
     logger.info(f'Prediction results: {results.get("predictions")}')
 
