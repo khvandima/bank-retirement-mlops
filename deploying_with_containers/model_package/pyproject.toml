@@ -38,8 +38,15 @@ filterwarnings = [
     "ignore::_pytest.warning_types.PytestUnknownMarkWarning",
 ]
 
+[project]
+name = "bank-classification-model"
+dynamic = ["version"]
+
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { file = ["bank_classification_model/VERSION"] }
 
 [tool.setuptools.package-data]
 bank_classification_model = ["datasets/*.csv"]
