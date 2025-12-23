@@ -38,6 +38,12 @@ filterwarnings = [
     "ignore::_pytest.warning_types.PytestUnknownMarkWarning",
 ]
 
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+bank_classification_model = ["datasets/*.csv"]
+
 [tool.black]
 target-version = ['py311']
 
