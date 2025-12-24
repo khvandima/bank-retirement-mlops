@@ -5,9 +5,9 @@ from bank_classification_model.processing.validation import BankRetirementDataIn
 
 class PredictionResults(BaseModel):
 
-    errors: Optional[Any]
+    errors: Optional[Any] = None
     version: str
-    predictions: Optional[int]
+    predictions: Optional[List[int]]
 
 
 class MultipleBankRetirementDataInputs(BaseModel):

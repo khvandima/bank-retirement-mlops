@@ -37,6 +37,11 @@ async def predict(input_data: schemas.MultipleBankRetirementDataInputs) -> Any:
 
         raise HTTPException(status_code=200, detail=json.loads(results['errors']))
 
+    preds = results.get("predictions")
+
+    if isinstance(preds, np.ndarray):
+        results["predictions"] = preds.astype(int).tolist()
+
     logger.info(f'Prediction results: {results.get("predictions")}')
 
     return results
